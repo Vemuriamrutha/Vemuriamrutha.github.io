@@ -20,7 +20,6 @@
     html { scroll-behavior: smooth; }
     body { background: var(--bg); color: var(--text); font-family: 'Inter', sans-serif; line-height: 1.6; }
 
-    /* NAV */
     nav {
       position: fixed; top: 0; width: 100%; z-index: 100;
       background: rgba(26,26,46,0.92);
@@ -34,14 +33,7 @@
     .nav-links a { color: var(--text-muted); text-decoration: none; font-size: 0.88rem; transition: color 0.2s; }
     .nav-links a:hover { color: var(--violet); }
 
-    /* HERO */
-    .hero {
-      min-height: 100vh;
-      display: flex; align-items: center;
-      padding: 6rem 2.5rem 4rem;
-      max-width: 1100px; margin: 0 auto;
-      gap: 4rem;
-    }
+    .hero { min-height: 100vh; display: flex; align-items: center; padding: 6rem 2.5rem 4rem; max-width: 1100px; margin: 0 auto; gap: 4rem; }
     .hero-content { flex: 1; }
     .hero-tag { font-family: 'Fira Code', monospace; font-size: 0.82rem; color: var(--gold); margin-bottom: 1rem; letter-spacing: 0.06em; }
     .hero-name { font-size: clamp(2.8rem, 6vw, 4.2rem); font-weight: 700; line-height: 1.1; margin-bottom: 0.5rem; }
@@ -52,30 +44,27 @@
     .badge-violet { background: rgba(167,139,250,0.1); border-color: var(--violet); color: var(--violet); }
     .badge-gold { background: rgba(245,158,11,0.1); border-color: var(--gold); color: var(--gold); }
     .badge-warm { background: rgba(240,237,232,0.08); border-color: var(--border); color: var(--text-muted); }
-    .hero-desc { color: var(--text-muted); font-size: 0.93rem; max-width: 500px; margin-bottom: 2rem; line-height: 1.85; }
+    .hero-desc { color: var(--text-muted); font-size: 0.93rem; max-width: 510px; margin-bottom: 2rem; line-height: 1.85; }
     .hero-desc strong { color: var(--text); }
-    .hero-btns { display: flex; gap: 0.75rem; flex-wrap: wrap; }
-    .btn-primary { padding: 0.7rem 1.5rem; background: var(--violet); color: #1a1a2e; border: none; border-radius: 8px; font-size: 0.88rem; font-weight: 600; cursor: pointer; text-decoration: none; transition: opacity 0.2s; }
+    .hero-btns { display: flex; gap: 0.7rem; flex-wrap: wrap; }
+    .btn-primary { padding: 0.7rem 1.5rem; background: var(--violet); color: #1a1a2e; border: none; border-radius: 8px; font-size: 0.87rem; font-weight: 600; cursor: pointer; text-decoration: none; transition: opacity 0.2s; }
     .btn-primary:hover { opacity: 0.85; }
-    .btn-secondary { padding: 0.7rem 1.5rem; background: transparent; color: var(--gold); border: 1px solid var(--gold); border-radius: 8px; font-size: 0.88rem; font-weight: 600; cursor: pointer; text-decoration: none; transition: background 0.2s; }
+    .btn-secondary { padding: 0.7rem 1.5rem; background: transparent; color: var(--gold); border: 1px solid var(--gold); border-radius: 8px; font-size: 0.87rem; font-weight: 600; cursor: pointer; text-decoration: none; transition: background 0.2s; }
     .btn-secondary:hover { background: rgba(245,158,11,0.1); }
-    .btn-outline { padding: 0.7rem 1.5rem; background: transparent; color: var(--text-muted); border: 1px solid var(--border); border-radius: 8px; font-size: 0.88rem; font-weight: 600; cursor: pointer; text-decoration: none; transition: border-color 0.2s, color 0.2s; }
+    .btn-outline { padding: 0.7rem 1.5rem; background: transparent; color: var(--text-muted); border: 1px solid var(--border); border-radius: 8px; font-size: 0.87rem; font-weight: 600; cursor: pointer; text-decoration: none; transition: border-color 0.2s, color 0.2s; }
     .btn-outline:hover { border-color: var(--violet); color: var(--violet); }
 
-    /* STAT CARDS */
     .hero-stats { flex: 0 0 auto; display: flex; flex-direction: column; gap: 1rem; }
     .stat-card { background: var(--surface); border: 1px solid var(--border); border-radius: 14px; padding: 1.25rem 1.75rem; text-align: center; min-width: 155px; transition: border-color 0.2s; }
     .stat-card:hover { border-color: var(--violet); }
     .stat-card .number { font-size: 2rem; font-weight: 700; color: var(--gold); font-family: 'Fira Code', monospace; }
     .stat-card .label { font-size: 0.75rem; color: var(--text-muted); margin-top: 0.25rem; }
 
-    /* SECTIONS */
     section { max-width: 1100px; margin: 0 auto; padding: 5rem 2.5rem; }
     .section-label { font-family: 'Fira Code', monospace; font-size: 0.78rem; color: var(--gold); letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 0.5rem; }
     .section-title { font-size: clamp(1.6rem, 3vw, 2.2rem); font-weight: 700; margin-bottom: 2.5rem; }
     .divider { width: 100%; height: 1px; background: var(--border); max-width: 1100px; margin: 0 auto; }
 
-    /* INTERNSHIP */
     .internship-card { background: var(--surface); border: 1px solid var(--gold); border-radius: 16px; padding: 2.5rem; display: flex; gap: 2rem; align-items: flex-start; position: relative; overflow: hidden; }
     .internship-card::before { content: ''; position: absolute; top: 0; left: 0; width: 4px; height: 100%; background: var(--gold); }
     .internship-icon { font-size: 2.5rem; flex-shrink: 0; }
@@ -83,7 +72,6 @@
     .internship-content h4 { font-size: 0.9rem; color: var(--text-muted); font-weight: 400; margin-bottom: 1rem; }
     .internship-content p { color: var(--text-muted); font-size: 0.88rem; line-height: 1.8; margin-bottom: 0.5rem; }
 
-    /* PROJECTS */
     .projects-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 1.5rem; }
     .project-card { background: var(--surface); border: 1px solid var(--border); border-radius: 14px; padding: 1.75rem; transition: border-color 0.25s, transform 0.25s; text-decoration: none; color: inherit; display: block; }
     .project-card:hover { border-color: var(--violet); transform: translateY(-4px); }
@@ -93,17 +81,16 @@
     .project-tags { display: flex; flex-wrap: wrap; gap: 0.4rem; }
     .project-tag { font-size: 0.7rem; padding: 0.2rem 0.55rem; background: var(--surface2); border: 1px solid var(--border); border-radius: 4px; color: var(--text-muted); font-family: 'Fira Code', monospace; }
 
-    /* SKILLS */
     .skills-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 1.5rem; }
     .skill-group { background: var(--surface); border: 1px solid var(--border); border-radius: 14px; padding: 1.5rem; transition: border-color 0.2s; }
     .skill-group:hover { border-color: var(--violet); }
     .skill-group h3 { font-size: 0.8rem; color: var(--violet); font-weight: 600; margin-bottom: 0.75rem; font-family: 'Fira Code', monospace; text-transform: uppercase; letter-spacing: 0.05em; }
-    .skill-level { font-size: 0.7rem; color: var(--gold); margin-bottom: 0.4rem; margin-top: 0.75rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; }
+    .skill-level { font-size: 0.68rem; color: var(--gold); margin-bottom: 0.4rem; margin-top: 0.7rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; }
+    .skill-level:first-of-type { margin-top: 0; }
     .skill-pills { display: flex; flex-wrap: wrap; gap: 0.4rem; }
     .skill-pill { font-size: 0.76rem; padding: 0.25rem 0.6rem; background: var(--surface2); border: 1px solid var(--border); border-radius: 6px; color: var(--text-muted); }
     .skill-pill:hover { color: var(--violet); border-color: var(--violet); }
 
-    /* ACHIEVEMENTS */
     .achievements-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1.25rem; margin-bottom: 2.5rem; }
     .achievement-card { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 1.5rem; display: flex; gap: 1rem; align-items: flex-start; transition: border-color 0.2s; }
     .achievement-card:hover { border-color: var(--gold); }
@@ -113,7 +100,6 @@
     .achievement-card h3 { font-size: 0.93rem; font-weight: 600; margin-bottom: 0.2rem; }
     .achievement-card p { font-size: 0.8rem; color: var(--text-muted); }
 
-    /* CERTIFICATIONS */
     .cert-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 1rem; }
     .cert-card { background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 1.25rem; display: flex; gap: 0.75rem; align-items: center; transition: border-color 0.2s; }
     .cert-card:hover { border-color: var(--violet); }
@@ -121,15 +107,13 @@
     .cert-card h3 { font-size: 0.85rem; font-weight: 600; margin-bottom: 0.1rem; }
     .cert-card p { font-size: 0.75rem; color: var(--text-muted); }
 
-    /* CONTACT */
     .contact-box { background: var(--surface); border: 1px solid var(--border); border-radius: 20px; padding: 3.5rem; text-align: center; }
-    .contact-box h2 { font-size: 1.9rem; font-weight: 700; margin-bottom: 1rem; }
+    .contact-box h2 { font-size: 1.85rem; font-weight: 700; margin-bottom: 1rem; }
     .contact-box p { color: var(--text-muted); margin-bottom: 2rem; max-width: 480px; margin-left: auto; margin-right: auto; font-size: 0.92rem; line-height: 1.8; }
     .contact-links { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
     .contact-link { padding: 0.75rem 1.5rem; border-radius: 8px; text-decoration: none; font-size: 0.88rem; font-weight: 500; border: 1px solid var(--border); color: var(--text-muted); background: var(--surface2); transition: border-color 0.2s, color 0.2s; }
     .contact-link:hover { border-color: var(--violet); color: var(--violet); }
 
-    /* FOOTER */
     footer { text-align: center; padding: 2rem; color: var(--text-muted); font-size: 0.8rem; border-top: 1px solid var(--border); }
     footer span { color: var(--violet); }
 
@@ -168,22 +152,22 @@
       <span class="badge badge-violet">🎯 AIGNITE Top 10</span>
     </div>
     <p class="hero-desc">
-      While most ECE students studied circuits in classrooms, I was building real systems at
-      <strong>DRDO – Research Centre Imarat</strong> — India's elite defence lab behind missile systems and avionics.
-      I master both <strong>hardware and software</strong> as one unified engineering mindset that ships
-      complete, production-ready solutions — independently, every time.
+      Most ECE students were still studying circuits in classrooms when I started building real systems at
+      <strong>DRDO – Research Centre Imarat</strong>, working on embedded hardware in a defence-grade lab.
+      I work across both <strong>hardware and software</strong> — sensors, firmware, APIs, and cloud — because
+      that's usually how the problems actually look.
     </p>
     <div class="hero-btns">
       <a href="#projects" class="btn-primary">View Projects</a>
-      <a href="Amrutha_Resume_ECE_internship.pdf" download class="btn-secondary">📄 ECE Resume</a>
-      <a href="Amrutha_Resume_Software.pdf" download class="btn-outline">💻 Software Resume</a>
+      <a href="Amrutha_Resume_Software.pdf" download class="btn-secondary">💻 Software Resume</a>
+      <a href="Amrutha_Resume_ECE_internship.pdf" download class="btn-secondary">📄 ECE/IoT Resume</a>
     </div>
   </div>
   <div class="hero-stats">
     <div class="stat-card"><div class="number">6+</div><div class="label">Projects Built</div></div>
-    <div class="stat-card"><div class="number">5</div><div class="label">Certifications</div></div>
+    <div class="stat-card"><div class="number">6</div><div class="label">Certifications</div></div>
     <div class="stat-card"><div class="number">8.51</div><div class="label">CGPA</div></div>
-    <div class="stat-card"><div class="number">#1</div><div class="label">SIH Finalist</div></div>
+    <div class="stat-card"><div class="number">2025</div><div class="label">SIH Finalist</div></div>
   </div>
 </div>
 
@@ -197,9 +181,9 @@
     <div class="internship-content">
       <h3>Embedded Systems Intern — DRDO-RCI</h3>
       <h4>Defence Research & Development Organisation · June 2026 – Present · Hyderabad, India</h4>
-      <p>Working on embedded systems development in a physical lab environment at Research Centre Imarat — a premier DRDO lab specializing in missile systems and avionics.</p>
-      <p>Gaining hands-on exposure to hardware-level programming, sensor interfacing, and real-time system design in a mission-critical, defence-grade setting.</p>
-      <p>Collaborating with senior engineers on embedded hardware prototyping, testing, and system-level validation under structured R&D protocols.</p>
+      <p>Working on embedded systems in a physical lab at Research Centre Imarat, a DRDO lab focused on missile systems and avionics.</p>
+      <p>Hands-on with hardware-level programming, sensor interfacing, and real-time system design in a defence-grade setting where mistakes aren't cheap.</p>
+      <p>Working alongside senior engineers on hardware prototyping, testing, and validation under structured R&D protocols — a very different pace from college projects.</p>
     </div>
   </div>
 </section>
@@ -213,38 +197,38 @@
     <a class="project-card" href="https://github.com/Vemuriamrutha/Smart-Community-Health-Monitoring">
       <div class="project-emoji">🏥</div>
       <h3>Smart Community Health Monitoring</h3>
-      <p>Real-time AI-powered platform for monitoring community health data at scale with intelligent alert systems.</p>
+      <p>A platform that tracks community health metrics in real time and flags anomalies early instead of waiting for periodic reports.</p>
       <div class="project-tags"><span class="project-tag">TypeScript</span><span class="project-tag">React</span><span class="project-tag">AI/ML</span><span class="project-tag">REST APIs</span></div>
     </a>
     <a class="project-card" href="https://github.com/Vemuriamrutha/Health-Navigator">
       <div class="project-emoji">🧭</div>
       <h3>Health Navigator</h3>
-      <p>Intelligent health guidance system with AI-driven recommendations tailored to individual health profiles.</p>
+      <p>Recommends next steps based on a user's health profile instead of generic advice — built to feel more like a second opinion than a search result.</p>
       <div class="project-tags"><span class="project-tag">TypeScript</span><span class="project-tag">AI/ML</span><span class="project-tag">Node.js</span></div>
     </a>
     <a class="project-card" href="https://github.com/Vemuriamrutha/Digital-Foot-Print-Risk-Analyzer">
       <div class="project-emoji">🔐</div>
       <h3>Digital Footprint Risk Analyzer</h3>
-      <p>Tool to detect, analyze and reduce online privacy risks with a personalized digital risk score.</p>
+      <p>Scans how exposed someone's online presence actually is and turns it into a single risk score people can actually act on.</p>
       <div class="project-tags"><span class="project-tag">Web App</span><span class="project-tag">AI/ML</span><span class="project-tag">APIs</span></div>
     </a>
     <div class="project-card">
       <div class="project-emoji">🤖</div>
       <h3>AI Prescription Guard</h3>
-      <p>System to analyze prescriptions and provide AI-driven medical insights, reducing human errors in healthcare.</p>
+      <p>Started this after noticing how often prescription errors slip through manual checks — flags dosage and interaction issues automatically.</p>
       <div class="project-tags"><span class="project-tag">Python</span><span class="project-tag">Flask</span><span class="project-tag">AI/ML</span></div>
     </div>
     <div class="project-card">
       <div class="project-emoji">🪙</div>
       <h3>Crypto Intelligence System (SIH-2025)</h3>
-      <p>Platform analyzing cryptocurrency address data using NLP, ML clustering, and graph-based network visualization.</p>
-      <div class="project-tags"><span class="project-tag">AI/ML</span><span class="project-tag">NLP</span><span class="project-tag">Graph Analytics</span><span class="project-tag">Web Scraping</span></div>
+      <p>Built for SIH — pulls public crypto wallet data and uses NLP plus clustering to surface suspicious activity patterns, visualized as a graph.</p>
+      <div class="project-tags"><span class="project-tag">AI/ML</span><span class="project-tag">NLP</span><span class="project-tag">Graph Analytics</span></div>
     </div>
     <div class="project-card">
       <div class="project-emoji">🏠</div>
       <h3>Voice-Controlled IoT Home Automation</h3>
-      <p>Smart home system enabling multilingual voice control via Google Assistant and Raspberry Pi GPIO relay switching.</p>
-      <div class="project-tags"><span class="project-tag">Raspberry Pi</span><span class="project-tag">Python</span><span class="project-tag">IoT</span><span class="project-tag">Google Assistant</span></div>
+      <p>My first real hardware-software project — multilingual voice control over home appliances using Raspberry Pi GPIO and Google Assistant.</p>
+      <div class="project-tags"><span class="project-tag">Raspberry Pi</span><span class="project-tag">Python</span><span class="project-tag">IoT</span></div>
     </div>
   </div>
 </section>
@@ -298,7 +282,7 @@
       <div class="achievement-icon">🥇</div>
       <div>
         <h3>SIH 2025 National Finalist</h3>
-        <p>Smart India Hackathon — National level competition out of thousands of teams</p>
+        <p>Smart India Hackathon — selected as a national finalist out of thousands of teams</p>
       </div>
     </div>
     <div class="achievement-card">
@@ -312,12 +296,13 @@
       <div class="achievement-icon">🎖️</div>
       <div>
         <h3>Nxtwave Buildathon</h3>
-        <p>State Level achievement</p>
+        <p>State Level</p>
       </div>
     </div>
   </div>
   <div class="cert-grid">
     <div class="cert-card"><div class="cert-icon">🏦</div><div><h3>Data Analyst Job Simulation</h3><p>Deloitte — Forage</p></div></div>
+    <div class="cert-card"><div class="cert-icon">🌐</div><div><h3>McKinsey.org Forward Program</h3><p>McKinsey & Company</p></div></div>
     <div class="cert-card"><div class="cert-icon">🔐</div><div><h3>Cyber Job Simulation</h3><p>Deloitte — Forage</p></div></div>
     <div class="cert-card"><div class="cert-icon">💻</div><div><h3>Software Engineering Simulation</h3><p>JPMorgan Chase — Forage</p></div></div>
     <div class="cert-card"><div class="cert-icon">📊</div><div><h3>GenAI Powered Data Analytics</h3><p>TATA — Forage</p></div></div>
@@ -329,11 +314,10 @@
 
 <section id="contact">
   <div class="contact-box">
-    <h2>Let's Build Something <span style="color:var(--violet)">Together</span></h2>
-    <p>I'm open to internship opportunities, collaborations, and interesting engineering projects. Feel free to reach out!</p>
+    <h2>Open to <span style="color:var(--violet)">Embedded & AI/ML Roles</span></h2>
+    <p>Currently interning at DRDO-RCI and looking for internships or full-time roles where I can keep working across both hardware and software. Reach out if something fits.</p>
     <div class="contact-links">
       <a class="contact-link" href="mailto:vvemuriamrutha@gmail.com">📩 vvemuriamrutha@gmail.com</a>
-      <a class="contact-link" href="tel:+918885774175">📞 +91 8885774175</a>
       <a class="contact-link" href="https://linkedin.com/in/vemuri-amrutha" target="_blank">🔗 LinkedIn</a>
       <a class="contact-link" href="https://github.com/Vemuriamrutha" target="_blank">🐙 GitHub</a>
     </div>
